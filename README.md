@@ -1,83 +1,72 @@
-# TravelTrucks
+TravelTrucks 🚐
 
-TravelTrucks is a frontend web application for a campervan rental company. Users can browse a catalog of available campervans, filter results by location, vehicle type, engine, transmission, and amenities, save favourites, and view detailed camper pages with photo galleries, specifications, user reviews, and a booking form.
+Kısa Açıklama
 
-## Live Demo
+TravelTrucks, karavan kiralama alanında faaliyet gösteren bir şirket için geliştirilmiş modern bir frontend web uygulamasıdır. Kullanıcılar ana sayfadan karavan kataloğuna erişebilir, çeşitli kriterlere göre (lokasyon, araç tipi, donanım vb.) karavanları filtreleyebilir, beğendikleri araçları favorilere ekleyebilir ve seçtikleri karavan için rezervasyon talebinde bulunabilirler.
 
-[Live demo](https://travel-trucks-silk-seven.vercel.app/)
+Temel Özellikler
 
-## Features
+Geniş Kapsamlı Katalog: Backend API'sinden (MockAPI) çekilen karavan ilanlarının listelenmesi.
 
-- **Home page** with a hero banner and a call-to-action linking to the catalog.
-- **Catalog page**:
-  - Displays all available campervans as cards with images, pricing, ratings, location, and key features.
-  - Filter sidebar with location search, vehicle type, engine, and transmission (single-select), and amenities (multi-select).
-  - "Load more" pagination.
-  - Loading indicator during data fetching.
-  - "No campers found" state when a filter combination returns no results.
-  - Add/remove campervans from favourites, persisted across page reloads.
-- **Camper details page**:
-  - Photo gallery with a main image and clickable thumbnails.
-  - Full vehicle details, including specifications and amenities.
-  - User reviews with star ratings.
-  - Booking/reservation form with validation and a confirmation message on successful submission.
+Gelişmiş Filtreleme: Konum, araç tipi ve ek donanımlara (klima, mutfak, TV vb.) göre anlık filtreleme yapabilme.
 
-## Tech Stack
+Favori Sistemi: Beğenilen karavanları favorilere ekleme özelliği (veriler sayfa yenilendiğinde kaybolmaması için Local Storage'da tutulur).
 
-- [Vite](https://vitejs.dev/)
-- [React](https://react.dev/)
-- [Redux Toolkit](https://redux-toolkit.js.org/) for state management
-- [React Router](https://reactrouter.com/) for routing
-- [Axios](https://axios-http.com/) for API requests
-- CSS Modules for styling
+Sayfalandırma (Load More): Katalog sayfasında "Load More" butonu ile ek ilanların yüklenmesi.
 
-## Getting Started
+Detaylı İlan Görünümü: Her karavan için özel fotoğraf galerisi, teknik detaylar (uzunluk, yakıt tüketimi vb.) ve 5 yıldızlı kullanıcı yorumları sistemi.
 
-### Prerequisites
+Rezervasyon Formu: Kullanıcıların karavan detay sayfasından hızlıca rezervasyon yapabilmesi ve başarılı işlem bildirimi.
 
-- [Node.js](https://nodejs.org/) (v18 or higher recommended)
-- npm
+Merkezi Durum Yönetimi: Araç listesi, filtreler ve favorilerin Redux kullanılarak global state üzerinde yönetilmesi.
 
-### Installation
+Kullanılan Teknolojiler
 
-1. Clone the repository:
-   ```
-   git clone https://github.com/hllverel/travel-trucks.git
-   ```
-2. Navigate into the project folder:
-   ```
-   cd travel-trucks
-   ```
-3. Install dependencies:
-   ```
-   npm install
-   ```
+React.js & Vite (Geliştirme ve Derleme)
 
-### Running the app locally
+Redux (State Management)
 
-Start the development server:
+React Router (Sayfa Yönlendirmeleri)
 
-```
+Axios (API İstekleri)
+
+CSS Modules (Bileşen Bazlı Stillendirme)
+
+Kurulum ve Kullanım Talimatları
+
+Projeyi yerel bilgisayarınızda çalıştırmak için aşağıdaki adımları izleyebilirsiniz:
+
+Repoyu Klonlayın:
+
+git clone https://github.com/baboopsc/travel-trucks.git
+
+
+Proje Dizinine Girin:
+
+cd travel-trucks
+
+
+Gerekli Bağımlılıkları (Dependencies) Yükleyin:
+Bilgisayarınızda Node.js yüklü olduğundan emin olun ve terminalde şu komutu çalıştırın:
+
+npm install
+
+
+Geliştirme Sunucusunu Başlatın:
+
 npm run dev
-```
 
-The app will be available at `http://localhost:5173`.
 
-### Building for production
+Proje, genellikle http://localhost:5173 adresinde çalışmaya başlayacaktır.
 
-```
+Canlı Sürüme Hazırlama (Build):
+Projeyi deploy etmek üzere derlemek için:
+
 npm run build
-```
 
-The production-ready files will be output to the `dist` folder.
 
-### Linting
+Yazar Bilgisi
 
-```
-npm run lint
-```
+Geliştirici: Ali Muhsin Mışraklı
 
-## Author
-
-**hllverel**
-GitHub: [@hllverel](https://github.com/hllverel)
+GitHub: baboopsc
