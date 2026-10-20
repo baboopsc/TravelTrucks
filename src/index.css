@@ -1,0 +1,83 @@
+:root {
+  --main: #101828;
+  --text: #475467;
+  --white: #fff;
+  --inputs: #f7f7f7;
+  --badges: #f2f4f7;
+  --gray: #6c717b;
+  --gray-light: #dadde1;
+  --button: #e44848;
+  --button-hover: #d84343;
+  --rating: #ffc531;
+  --grey-green: #829b91;
+  --olive: #f0f1f1;
+  --green-hover: #6d7b75;
+
+  --font-family: "Inter", sans-serif;
+  --second-family: "Manrope", sans-serif;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+html {
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  max-width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  font-weight: 400;
+  color: var(--main);
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 0.66667;
+  color: var(--badges);
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+  color: var(--main);
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+a,
+button {
+  all: unset;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
