@@ -1,4 +1,4 @@
-TravelTrucks 🚐
+TravelTrucks 
 
 Kısa Açıklama
 
