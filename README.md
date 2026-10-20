@@ -1,4 +1,4 @@
-# TravelTrucks 🚐
+# TravelTrucks 
 
 ## Kısa Açıklama
 TravelTrucks, karavan kiralama alanında faaliyet gösteren bir şirket için geliştirilmiş modern bir frontend web uygulamasıdır. Kullanıcılar ana sayfadan karavan kataloğuna erişebilir, çeşitli kriterlere göre (lokasyon, araç tipi, donanım vb.) karavanları filtreleyebilir, beğendikleri araçları favorilere ekleyebilir ve seçtikleri karavan için rezervasyon talebinde bulunabilirler.
